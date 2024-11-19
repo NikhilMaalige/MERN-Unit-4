@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "buildfrontend": "rmdir /s /q dist && cd ..\\movies-frontend && npm run build && xcopy dist ..\\movies-backend\\dist /E /H /C /I",
     "start": "node index.js",
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
